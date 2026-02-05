@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedra Papel Tesoura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br>
+    <h1 class="titulo">Pedra, Papel ou Tesoura</h1>
+    <br><br><br><br><br>
+    <section class="containerBotao">
+        <button class="botao" onclick="jogar('pedra')">Pedra</button>
+        <button class="botao" onclick="jogar('papel')">Papel</button>
+        <button class="botao" onclick="jogar('tesoura')">Tesoura</button>
+    </section>
+    <p id="resultado"></p>
+    <!-- <img id="emoteFeliz" src="img/emoji-feliz-ficando-triste-emoticon-feliz-ficando-triste.png" alt=""> -->
+    <script>
+        function jogar(escolhaUsuario) {
+            const opcoes = ['pedra', 'papel', 'tesoura'];
+            const escolhaComputador = opcoes[Math.floor(Math.random() * 3)];
+            let resultado = "";
+
+            if (escolhaUsuario === escolhaComputador) {
+                resultado = "Empate!";
+            } else if (
+                (escolhaUsuario === 'pedra' && escolhaComputador === 'tesoura') ||
+                (escolhaUsuario === 'papel' && escolhaComputador === 'pedra') ||
+                (escolhaUsuario === 'tesoura' && escolhaComputador === 'papel')
+            ) {
+                resultado = "Você venceu! Computador escolheu: " + escolhaComputador;
+            } else {
+                resultado = "Você perdeu! Computador escolheu: " + escolhaComputador;
+            }
+            document.getElementById('resultado').innerHTML = resultado;
+        }
+    </script>
+</body>
+</html>

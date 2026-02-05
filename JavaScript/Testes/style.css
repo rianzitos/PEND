@@ -1,0 +1,53 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: yellow;
+}
+
+.botao {
+    border: 2px solid black;
+    background-color: aqua;
+    font-size: 25px;
+    color: rgb(255, 0, 238);
+    font-weight: bold;
+}
+
+.titulo {
+    color: blueviolet;
+    text-align: center;
+    font-size: 50px;
+    border: 2px solid black;
+    background-color: rgb(255, 56, 56);
+    border-radius: 50px;
+    margin: 0 400px;
+    font-weight: bold;
+}
+
+.containerBotao {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#resultado {
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+@keyframes rotacao {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.botao:hover {
+     animation: rotacao 0.5s linear infinite;
+}
+
+
