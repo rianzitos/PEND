@@ -70,10 +70,6 @@ butHard.addEventListener("click", function() {
     if (nome === "") {
         document.getElementById("texto").innerHTML = "<p id='erro'>Campo nome é obrigatório</p>";
     }
-
-    else if (nome === "Yuri Alberto" || nome === "Garro" || nome === "Memphis") {
-        document.getElementById("texto").innerHTML = "<p id='certo'>Nome enviado com sucesso, Vai Corinthians!</p>";
-    }
     
     else{
         document.getElementById("texto").innerHTML = "<p id='certo'>Nome enviado com sucesso!</p>";
