@@ -14,3 +14,8 @@
 .riscado {
     text-decoration: line-through;
 }
+
+#butColor {
+    font-size: 30px;
+    padding: 30px;
+}

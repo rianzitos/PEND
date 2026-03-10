@@ -70,8 +70,46 @@ butHard.addEventListener("click", function() {
     if (nome === "") {
         document.getElementById("texto").innerHTML = "<p id='erro'>Campo nome é obrigatório</p>";
     }
-    
+
     else{
         document.getElementById("texto").innerHTML = "<p id='certo'>Nome enviado com sucesso!</p>";
     }
 });
+
+
+//Exercícios - Validação de email
+
+//Validação simples de email
+
+let email = document.querySelector("#email");
+let validar = document.querySelector("#validar");
+let mensagemSuc = document.querySelector("#mensagemSuc")
+let mensagemErro = document.querySelector("#mensagemErro")
+
+validar.addEventListener("click", function() {
+    let nomeEmail = email.value;
+    if (nomeEmail.includes("@") && nomeEmail.includes(".")) {
+        mensagemErro.textContent = "";
+        document.getElementById("mensagemSuc").innerHTML = "<p id='certo'>Email Cadastrado</p>";
+    }
+    else {
+        mensagemSuc.textContent = ""
+        document.getElementById("mensagemErro").innerHTML = "<p id='erro'>Erro!</p>";
+    }
+});
+
+//Verificação simples de força de senha
+
+let senha = document.querySelector("#senha");
+let verifiSenha = document.querySelector("#verifiSenha");
+
+senha.addEventListener("keyup", function() {
+    let contadorSenha = senha.value.length
+
+    if (contadorSenha < 6) {
+        document.getElementById("verifiSenha").innerHTML = "<p id='erro'>Senha fraca</p>";
+    } 
+    else {
+        document.getElementById("verifiSenha").innerHTML = "<p id='certo'>Senha forte</p>";
+    }
+})
