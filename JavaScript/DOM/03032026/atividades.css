@@ -1,0 +1,16 @@
+.mensagem {
+    display: none;
+}
+
+#erro {
+    color: red;
+}
+
+#certo {
+    color: rgb(8, 208, 8);
+}
+
+
+.riscado {
+    text-decoration: line-through;
+}
