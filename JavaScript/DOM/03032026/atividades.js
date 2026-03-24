@@ -45,7 +45,7 @@ let lista = document.querySelector("#lista");
 buttonEle.addEventListener("click", function() {
     let novoItem = document.createElement("li");
     novoItem.textContent = inputEle.value;
-    document.getElementById("lista").appendChild(novoItem);
+    lista.appendChild(novoItem);
 
 //Atividade 6 e Desafio Extra
     novoItem.addEventListener("click", function() {
@@ -67,7 +67,7 @@ let texto = document.querySelector("#texto");
 
 butHard.addEventListener("click", function() {
     let nome = inputHard.value
-    if (nome === "") {
+    if (nome.trim() === "") {
         document.getElementById("texto").innerHTML = "<p id='erro'>Campo nome é obrigatório</p>";
     }
 
@@ -86,17 +86,7 @@ let validar = document.querySelector("#validar");
 let mensagemSuc = document.querySelector("#mensagemSuc")
 let mensagemErro = document.querySelector("#mensagemErro")
 
-validar.addEventListener("click", function() {
-    let nomeEmail = email.value;
-    if (nomeEmail.includes("@") && nomeEmail.includes(".")) {
-        mensagemErro.textContent = "";
-        document.getElementById("mensagemSuc").innerHTML = "<p id='certo'>Email Cadastrado</p>";
-    }
-    else {
-        mensagemSuc.textContent = ""
-        document.getElementById("mensagemErro").innerHTML = "<p id='erro'>Erro!</p>";
-    }
-});
+
 
 //Verificação simples de força de senha
 
@@ -109,7 +99,39 @@ senha.addEventListener("keyup", function() {
     if (contadorSenha < 6) {
         document.getElementById("verifiSenha").innerHTML = "<p id='erro'>Senha fraca</p>";
     } 
+    else if (contadorSenha >= 6 && contadorSenha < 10) {
+        document.getElementById("verifiSenha").innerHTML = "<p id='meh'>Senha aceitável</p>";
+    }
     else {
         document.getElementById("verifiSenha").innerHTML = "<p id='certo'>Senha forte</p>";
+    }
+})
+
+validar.addEventListener("click", function() {
+    let mensE = document.getElementById("menEmail");
+    let nomeEmail = email.value;
+    if (nomeEmail.includes("@") && nomeEmail.includes(".") && senha.value.length >= 6) {
+        mensE.textContent = "";
+        menSenha.textContent = "";
+        mensagemErro.textContent = "";  
+        document.getElementById("mensagemSuc").innerHTML = "<p id='certo'>Email e senha validados!</p>";
+    } 
+    else if (nomeEmail === "") {
+       mensE.innerHTML = "<p id='erro'>Preencha o campo email (Exemplo: nome@gmail.com)</p>";
+       mensagemErro.textContent = "";
+       mensagemSuc.textContent = "";
+       menSenha.textContent = "";
+    }    
+    else if (senha.value.length === 0) {
+        mensE.textContent = "";
+        menSenha = document.getElementById("menSenha");
+        menSenha.innerHTML = "<p id='erro'>Preencha o campo senha</p>";
+    }
+    
+    else {
+        mensE.textContent = "";
+        menSenha.textContent = "";
+        mensagemSuc.textContent = ""
+        document.getElementById("mensagemErro").innerHTML = "<p id='erro'>Email ou senha inválidos, verifique</p>";
     }
 })

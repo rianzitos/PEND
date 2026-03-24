@@ -50,18 +50,20 @@
 
 
     <h1>Exercícios - Validação de Campos</h1>
-    <h1>Validação simples de e-mail</h1>
-    <input type="email" id="email">
+    <h1>Validação simples de e-mail e senha</h1>
+    
+    <input placeholder="Digite seu email" type="email" id="email">
+    <br>
+    <p id="menEmail"></p>
+     <br>
+    <input placeholder="Digite sua senha" type="password" id="senha" required>
+    <br>
+    <p id="menSenha"></p>
+    <br>
     <button id="validar">Validar</button>
-
+    <p id="verifiSenha"></p>
     <p id="mensagemSuc"></p>
     <p id="mensagemErro"></p>
-
-    <hr>
-
-    <h1>Verificação simples de força de senha</h1>
-    <input type="password" id="senha">
-    <p id="verifiSenha"></p>
 <script src="atividades.js"></script>
 </body>
 </html>

@@ -10,6 +10,9 @@
     color: rgb(8, 208, 8);
 }
 
+#meh {
+    color: orange;
+}
 
 .riscado {
     text-decoration: line-through;
