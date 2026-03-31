@@ -1,0 +1,22 @@
+#formulario {
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 30px;
+    height: auto;
+}
+
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+input {
+    padding: 5px;
+    width: 200px;
+}
+#listaTel {
+    list-style: none;
+}
+#listaTel li {
+    margin-bottom: 10px;
+}
