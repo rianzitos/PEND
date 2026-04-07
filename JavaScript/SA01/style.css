@@ -1,22 +1,119 @@
+/* Cores: 
+Branco: #FFFFFF
+Azul acinzentado claro: #676F9D
+Azul médio: #424769
+Azul escuro: #2D3250
+Laranja (pêssego): #F9B17A */
+
 #formulario {
-    border: 2px solid black;
+    background-color: #2D3250;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 15px #2D3250;
+    transition: 0.3s;
+    width: 500px;
+    margin: auto;
+    border: none;
     border-radius: 20px;
-    margin: 30px;
-    height: auto;
+    padding: 10px;
+    backdrop-filter: blur(12px);
 }
 
 body {
-    font-family: Arial;
+    background: linear-gradient(135deg, #181A2F, #2D3250, #424769);
+    background-size: 200% 200%;
+    font-family: sans-serif;
     text-align: center;
 }
 
 input {
-    padding: 5px;
-    width: 200px;
+    color: #FFFFFF;
+    background-color: #424769;
+    border-radius: 20px;
+    padding: 8px 45px 8px 12px; 
+    border: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 100%;
 }
+
+input::placeholder {
+    color: #9aa0c3;
+}
+
 #listaTel {
     list-style: none;
 }
 #listaTel li {
     margin-bottom: 10px;
+}
+
+.icone {
+    font-size: 18px;
+    cursor: pointer;
+    color: #F9B17A;
+    z-index: 10;
+    user-select: none;
+    transition: 0.2s;
+    position: absolute;
+    top: 30%;
+    right: 4%;
+}
+h1, h2 {
+    color: #FFFFFF;
+}
+
+button {
+    font-weight: bold;
+    color:  #2D3250;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color:#F9B17A;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #F9B17A;  
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 15px #F9B17A;
+    transition: 0.3s;
+}
+button:hover {
+    box-shadow: 0 0 25px #F9B17A;
+    transform: translateY(-2px) scale(1.05);
+}
+
+ul button {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+#cadastrar {
+    font-size: 18px;
+}
+
+#textObg {
+    font-size: 15px;
+    color: #F9B17A;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.input-telefone {
+    width: 100%;
+}
+#listaTel {
+    list-style: none;
+    width: 100%;
+    padding: 0;
 }

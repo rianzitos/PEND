@@ -5,32 +5,49 @@
     <meta charset="UTF-8">
     <title>TechConnect</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
 
 
     <div id="formulario">
-        <h2>Cadastro de Usuário</h2>
+
+        <!-- Título -->
+        <h1>Cadastro de usuário  TechConnect</h1>
+        <span id="textObg">Campos com * são obrigatórios</span>
+        
+        <!-- Mensagem dizendo se cadastro foi enviado ou não -->
+        <p id="mensagem"></p>
+        <!-- Texto dizendo que se feve preencher os campos obrigatórios -->
+        <p id="obgText"></p>
 
 
-        <input placeholder="Digite seu nome" type="text" id="nome"><br><br>
-        <input placeholder="Digite um email" type="text" id="email"><br><br>
-        <input placeholder="Digite sua senha" type="password" id="senha">
+        <input placeholder="Digite seu nome *" type="text" id="nome" ><br><br>
+        <input placeholder="Digite um email (Ex: exemplo@gmail.com) *" type="text" id="email"><br><br>
+        <div class="input-group senha-container">
+            <input placeholder="Digite sua senha (Deve conter 6 caracteres ou mais) *" type="password" id="senha" >
+            <i class="bi bi-eye-fill icone"></i>
+        </div>
+        <!-- Texto sobre a força da senha -->
         <p id="senhaText"></p>
-
-        <input placeholder="Confirma sua senha" type="password" id="senhaConfirm"><br>
-        <p id="confirmText"></p><br>
-        <input placeholder="Digite um telefone" type="text" id="telefone" title="Use o formato (99)99999-9999">
-        <button id="addTel">Adicionar telefone</button><br>
+ 
+        <input placeholder="Confirme sua senha *" type="password" id="senhaConfirm">
+        <!-- Texto de confirmação da senha (se elas coincidem)-->
+        <p id="confirmText"></p>
+        <p id="compSenha"></p>
+        <div class = "input-group tel-group">
+            <input placeholder="Digite um telefone (Use o formato (99)99999-9999) *" type="text" id="telefone" title="Use o formato (99)99999-9999" class="inputs">
+            <i class="bi bi-plus-square-fill icone" id="addTel"></i>
+        </div>
+        <!-- Lista dos telefones adicionados -->
         <ul id="listaTel"></ul>
-        <input placeholder="Digite seu CEP" type="text" id="endereco" title="Use o formato 00000-000"><br><br>
+        <input placeholder="Digite seu CEP (Use o formato: 00000-000) *" type="text" id="endereco" title="Use o formato 00000-000" class="inputs"><br><br>
 
+        <!-- Botão de envio do cadastro -->
         <button type="button" id="cadastrar">Cadastrar</button>
 
-        <p id="mensagem"></p>
-        <p id="obgText"></p>
-        <p id="compSenha"></p>
+       
 
     </div>
 
