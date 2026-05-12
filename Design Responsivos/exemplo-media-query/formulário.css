@@ -1,0 +1,119 @@
+    header {
+        text-align: center;
+        height: 10vh;
+        border-radius: 20px;
+        padding: 0;
+        width: 33vw;
+        background-color: #c8d9e6;
+        box-shadow: 7px 5px 5px black;
+        border: solid 3px black;
+    }
+
+    .container-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer {
+
+        padding: 30px;
+        text-align: center;
+        background-color: #c8d9e6;
+        margin-top: 100px;
+        border: solid 3px black;
+        border-left: 1px;
+        margin-bottom: -30px;
+        margin-left: -50px;
+        margin-right: -8px;
+
+    }
+
+    .botao {
+        width: 7rem;
+        margin-bottom: 2%;
+        border-radius: 20px;
+    }
+
+    .container-botao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        text-align: center;
+        border: solid 3px black;
+        background-color: #c8d9e6;
+        width: 33vw;
+        font-family: Source Sans Pro;
+        box-shadow: 7px 5px 5px black;
+        border-radius: 20px;
+    }
+
+    body {
+        background-image: url(https://static.vecteezy.com/ti/fotos-gratis/p1/4493283-fundo-gradiente-azul-claro-e-azul-escuro-gratis-foto.jpg);
+    }
+
+    .voltar-container {
+        text-align: left;
+        margin: 20px 0 10px 40px;
+    }
+
+    .botao-voltar {
+        background-color: #c8d9e6;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 2px solid black;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        box-shadow: 3px 3px 5px black;
+        font-family: Arial, sans-serif;
+        transition: background-color 0.3s;
+    }
+
+    .icone-casa {
+        width: 2rem;
+        height: 2rem;
+        vertical-align: middle;
+    }
+
+    .botao-sobre {
+        background-color: #c8d9e6;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 2px solid black;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        box-shadow: 3px 3px 5px black;
+        font-family: Arial, sans-serif;
+        transition: background-color 0.3s;
+    }
+
+    .botao-direita {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+    }
+
+    .icone-pessoa {
+        width: 2rem;
+        height: 2rem;
+        vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+        main {}
+    }
