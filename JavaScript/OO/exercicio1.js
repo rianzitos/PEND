@@ -35,6 +35,7 @@ class Funcionario {
 const funcionario1 = new Funcionario("Rian", 23, "Desenvolvedor", "Ensino Superior Completo", "449.931.648-07", "8 horas", 4500)
 const funcionario2= new Funcionario("Guilherme Scarparo", 24, "Desenvolvedor", "Ensino Superior Completo", "492.267.448-90", "8 horas", 4500);
 const funcionario3 = new Funcionario("Renato", 38, "Professor", "Pedagogia", "287.182.765-08", "9 horas", 2000);
+const funcionarioEspecial = new Funcionario("Peter Parker", 21, "Homem-Aranha", "Ensino Médio Completo", "200.220.122-017", "16 horas", 0);
 
 
 console.log(funcionario1.trabalhar());
@@ -53,8 +54,14 @@ console.log(funcionario2.aposentar());2
 console.log("|--------------------------------------------|")
 console.log("|--------------------------------------------|")
 
-
 console.log(funcionario3.trabalhar());
 console.log(funcionario3.entregarTarega());
 console.log(funcionario3.receberSalario());
 console.log(funcionario3.aposentar());
+
+console.log("|--------------------------------------------|")
+console.log("|--------------------------------------------|")
+
+console.log(funcionarioEspecial.trabalhar());
+console.log(funcionarioEspecial.entregarTarega());
+console.log(funcionarioEspecial.receberSalario());
