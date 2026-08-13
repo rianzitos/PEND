@@ -43,7 +43,7 @@ class Estoque {
                 <p>Desconto: ${produto.desconto}%</p>
             </div>
         `;
-        
+
         })
     }
 }
