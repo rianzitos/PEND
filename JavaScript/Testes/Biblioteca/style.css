@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background: linear-gradient(135deg,
+            #070912 0%,
+            #0B0A16 50%,
+            #070912 100%);
+    color: #F8FAFC;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+/*  ======= TITULO ======= */
+
+.header {
+    display: flex;
+    background: linear-gradient(135deg,
+            #070912 0%,
+            #0B0A16 50%,
+            #070912 100%);
+    color: white;
+    padding: 1%;
+    justify-content: space-between;
+}
+
+#titulo {
+    display: flex;
+    width: 30vw;
+    align-items: center;
+}
+
+#titulo h2 {
+    margin-left: 2%;
+    font-size: 1.3rem;
+}
+
+.iconeLivro {
+    font-size: 1.4rem;
+    color: #9B3DFF;
+}
+
+.containerOpcoes {
+    display: flex;
+
+}
+
+.containerPesquisa {
+    width: 30vw;
+}
+
+#barraPesquisa {
+    width: 25vw;
+    padding: 2%;
+    border-radius: 10px;
+    background: #171f32;
+    border: 1px solid #252B3A;
+    color: #F8FAFC;
+    transition: 0.5s ease;
+}
+
+#barraPesquisa:focus {
+    transition: 0.5s ease;
+    border-color: #7C3AED;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+.containerOpcoes {
+    display: flex;
+    align-items: center;
+}
+
+
+.iconeSino {
+    font-size: 1.4rem;
+    margin-right: 2vw;
+}
+
+.iconePerson {
+    font-size: 1.8rem;
+    margin-right: 0.5vw;
+
+}
+
+.containerOpcoes span {
+    font-size: 0.8rem;
+}
