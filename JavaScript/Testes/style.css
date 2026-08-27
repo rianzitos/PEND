@@ -1,3 +1,7 @@
+* {
+    background: linear-gradient(to top, white, red);
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -8,8 +12,9 @@ body{
     border: 2px solid black;
     background-color: aqua;
     font-size: 25px;
-    color: rgb(255, 0, 238);
+    color: rgb(46, 0, 43);
     font-weight: bold;
+    cursor: pointer;
 }
 
 .titulo {
@@ -35,6 +40,7 @@ body{
     text-align: center;
     font-weight: bold;
     font-size: 28px;
+    animation: rotacao 0.5s linear infinite;
 }
 
 @keyframes rotacao {

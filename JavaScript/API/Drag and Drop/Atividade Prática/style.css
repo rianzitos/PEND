@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    padding: 2%;
+}
+
+.containerChao {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+}
+
+.chao {
+    width: 35vw;
+    height: 20vh;
+    background-color: green;
+}
+
+.containerAgua {
+    position: fixed;
+    bottom: 0;
+    left: 35vw;
+}
+
+#agua {
+    width: 30vw;
+    height: 15vh;
+
+    background-color: rgb(6, 6, 173);
+
+    font-size: 3rem;
+    text-align: center;
+}
+
+.containerTroncos {
+    /* background-color: brown; */
+    position: fixed;
+    display: flex;
+    align-items: flex-end;
+    width: 30vw;
+    height: 5vh;
+    bottom: 15vh;
+    left: 35vw;
+    z-index: 1;
+}
+
+.tronco {
+    font-size: 2rem;
+    width: 10%;
+    cursor: grab;
+}
+
+.pessoa {
+    width: 240px;
+    position: fixed;
+    bottom: 14vh;
+    left: 21vw;
+    z-index: 2;
+    cursor: grab;
+}
+
+.pessoaFeliz {
+    width: 270px;
+    position: fixed;
+    bottom: 17vh;
+    left: 70vw;
+    z-index: 2;
+    display: none;
+}
+
+#mensagemVitoria {
+    text-align: center;
+    padding: 1%;
+    color: purple;
+    font-family: sans-serif;
+    display: none;
+}
+
+#mensagemTriste {
+    text-align: center;
+    padding: 1%;
+    color: red;
+    font-family: sans-serif;
+    display: none;
+}
+
+.sol {
+    position: fixed;
+    top: 5vh;
+    right: 5vw;
+
+    font-size: 10rem;
+
+    z-index: 0;
+}
+
+.nuvem1 {
+    position: fixed;
+    top: 10vh;
+    left: 20vw;
+
+    font-size: 7rem;
+
+    z-index: 0;
+}
+
+.nuvem2 {
+    position: fixed;
+    top: 10vh;
+    left: 68vw;
+
+    font-size: 7rem;
+
+    z-index: 0;
+}

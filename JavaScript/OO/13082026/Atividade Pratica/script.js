@@ -27,7 +27,7 @@ class Estoque {
     adicionarProduto(produto) {
         this.produtos.push(produto);
         this.adicionarLocal();
-    }
+    } x
 
     exibir() {
 
@@ -65,15 +65,16 @@ class Estoque {
         const dados = localStorage.getItem("produtos");
 
         if (dados) {
-
             const produtoSalvo = JSON.parse(dados);
 
-            this.produtos = produtoSalvo.map(produto => {
-                return new Produto(
-                    produto.nome,
-                    produto.preco,
-                    produto.categoria,
-                    produto.desconto
+            produtoSalvo.forEach(produto => {
+                this.produtos.push(
+                    new Produto(
+                        produto.nome,
+                        produto.preco,
+                        produto.categoria,
+                        produto.desconto
+                    )
                 );
             });
         }

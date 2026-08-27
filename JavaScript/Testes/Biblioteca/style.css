@@ -32,6 +32,7 @@ body {
     display: flex;
     width: 30vw;
     align-items: center;
+    margin-left: 1.5rem;
 }
 
 #titulo h2 {
@@ -40,7 +41,7 @@ body {
 }
 
 .iconeLivro {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     color: #9B3DFF;
 }
 
@@ -51,11 +52,14 @@ body {
 
 .containerPesquisa {
     width: 30vw;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 #barraPesquisa {
     width: 25vw;
-    padding: 2%;
+    padding: 2% 2% 2% 2.8rem;
     border-radius: 10px;
     background: #171f32;
     border: 1px solid #252B3A;
@@ -70,6 +74,14 @@ body {
     box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
 }
 
+.iconeLupa {
+    position: absolute;
+    left: 1rem;
+    font-size: 1rem;
+    color: #9598a0;
+    pointer-events: none;
+}
+
 .containerOpcoes {
     display: flex;
     align-items: center;
@@ -82,7 +94,7 @@ body {
 }
 
 .iconePerson {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-right: 0.5vw;
 
 }
