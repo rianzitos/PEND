@@ -7,6 +7,7 @@
 body {
     background-color: rgb(227, 226, 226);
     font-family: "Montserrat", sans-serif;
+    height: 115vh;
 }
 
 .containerForm {
@@ -17,13 +18,21 @@ body {
     align-items: center;
     width: 80vw;
     margin-left: 10vw;
-    justify-content: center;
+    justify-content: flex-start;
+    /* era center */
     margin-top: 3vh;
-    padding: 2%;
+    padding-top: 0;
+    padding-bottom: 3vh;
+    /* pra dar um respiro embaixo já que tirou a altura fixa */
     border-radius: 20px;
     background-color: white;
-    height: 100vh;
+    overflow: hidden;
+    /* mantém os cantos arredondados cortando o header */
+    /* remove o height: 110vh */
+}
 
+.localizaDados {
+    margin-top: 2vh;
 }
 
 .containerInfos {
@@ -79,20 +88,22 @@ body {
 .containerBotao {
     display: flex;
     margin-top: 3%;
-    gap: 30vw;
+    gap: 10vw;
 }
 
 #ligarLocal {
     background-color: rgb(230, 168, 75);
     color: white;
+    transition: 0.5s ease;
 }
 
 #ligarCam {
     background-color: rgb(71, 71, 199);
     color: white;
+    transition: 0.5s ease;
 }
 
-#ligarlocal:hover {
+#ligarLocal:hover {
     transition: 0.5s ease;
     background-color: rgb(197, 135, 42);
     transform: scale(1.1);
@@ -101,5 +112,29 @@ body {
 #ligarCam:hover {
     transition: 0.5s ease;
     background-color: rgb(36, 36, 147);
+    transform: scale(1.1);
+}
+
+.header {
+    background-color: rgb(96, 96, 215);
+    width: 100%;
+    padding: 2vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#registrarPonto {
+    background-color: rgb(76, 187, 76);
+    color: white;
+    transition: 0.5s ease;
+    /* margin-top: 3vh; */
+    /* margin-bottom: 3vh; */
+}
+
+#registrarPonto:hover {
+    transition: 0.5s ease;
+    background-color: rgb(56, 150, 56);
     transform: scale(1.1);
 }
