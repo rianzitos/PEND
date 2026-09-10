@@ -4,6 +4,13 @@ const precisao = document.querySelector("#precis")
 const botaoLocal = document.querySelector("#ligarLocal");
 const botaoCam = document.querySelector("#ligarCam");
 const botaoRegistrar = document.querySelector("#registrarPonto");
+const botaoTirarFoto = document.querySelector("#tirarFoto");
+const video = document.querySelector("#camera");
+const canvas = document.querySelector("#canvas");
+const botao = document.querySelector("#botao");
+const foto = document.querySelector("#foto");
+const containerFoto = document.querySelector(".containerFoto")
+
 
 let localOk = false;
 let camOk = false;
@@ -40,18 +47,39 @@ botaoCam.addEventListener("click", function () {
         audio: true
     })
         .then(function (stream) {
-            const video = document.querySelector("#camera");
             video.srcObject = stream;
 
             camOk = true;
             verificarLiberacao();
+            botaoCam.style.display = "none";
+            botaoTirarFoto.style.display = "block"
         })
         .catch(function (erro) {
             console.log("Erro ao acessar câmera:", erro);
         });
+
 });
 
 botaoRegistrar.addEventListener("click", function () {
     console.log("Ponto registrado!");
-    // aqui depois você pode adicionar o envio pro backend
 });
+
+botaoTirarFoto.addEventListener("click", function () {
+
+    containerFoto.style.display = "block";
+
+    canvas.width = video.clientWidth;
+    canvas.height = video.clientHeight
+
+    const contexto = canvas.getContext("2d");
+
+    contexto.drawImage(
+        video,
+        0,
+        0,
+        canvas.width,
+        canvas.height
+    );
+
+    foto.src = canvas.toDataURL("image/png");
+})
