@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="assets/logoCarrinho.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="p-3 mb-3 border-bottom" style="background-color: black; height: 20vh;">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                    <img src="assets/logoHeader.png" width="200rem">
+                </a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li>
+                        <a href="#" class="nav-link px-2" style="color: white;">Início</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2" style="color: white;">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2" style="color: white;">Carrossel</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2" style="color: white;">Fale Conosco</a>
+                    </li>
+                </ul>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control" placeholder="Pesquisar..." aria-label="Search" />
+                </form>
+                <div class="dropdown text-end">
+                    <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="assets/Composição 3D de compras online.png" class="d-block mx-lg-auto img-fluid"
+                    alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                    Encontre tudo o que você procura.
+                </h1>
+                <p class="lead">
+                    Explore nosso catálogo de produtos de forma simples, rápida e prática. Descubra novas opções,
+                    conheça os detalhes de cada produto e encontre alternativas que atendam às suas necessidades. Tudo
+                    isso em um só lugar, com uma navegação intuitiva que facilita sua busca e ajuda você a encontrar
+                    exatamente o que procura.
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button style="background-color: rgb(255, 208, 0); border: none
+                    ;" type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                        Explorar Catálogo
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+                        Conheça mais
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">Columns with icons</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                        <use xlink:href="#collection"></use>
+                    </svg>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+                <p>
+                    Paragraph of text beneath the heading to explain the heading.
+                    We'll add onto it with another sentence and probably just keep
+                    going until we run out of words.
+                </p>
+                <a href="#" class="icon-link">
+                    Call to action
+                    <svg class="bi" aria-hidden="true">
+                        <use xlink:href="#chevron-right"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="feature col">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                        <use xlink:href="#people-circle"></use>
+                    </svg>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+                <p>
+                    Paragraph of text beneath the heading to explain the heading.
+                    We'll add onto it with another sentence and probably just keep
+                    going until we run out of words.
+                </p>
+                <a href="#" class="icon-link">
+                    Call to action
+                    <svg class="bi" aria-hidden="true">
+                        <use xlink:href="#chevron-right"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="feature col">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                        <use xlink:href="#toggles2"></use>
+                    </svg>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+                <p>
+                    Paragraph of text beneath the heading to explain the heading.
+                    We'll add onto it with another sentence and probably just keep
+                    going until we run out of words.
+                </p>
+                <a href="#" class="icon-link">
+                    Call to action
+                    <svg class="bi" aria-hidden="true">
+                        <use xlink:href="#chevron-right"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom">Nossos principais produtos</h2>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url(assets/moletom_foco.png); background-size: cover;">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                            Jaqueta moletom na cor cinza
+                        </h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <button style="font-weight: bold;" class="btn btn-warning rounded-pill px-3"
+                                    type="button">
+                                    Comprar
+                                </button>
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg>
+                                <small style="font-weight: bold;">R$200,00</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url(assets/calca_cargo_foco.png); background-size: cover;">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                            Calça cargo na cor bege
+                        </h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <button style="font-weight: bold;" class="btn btn-warning rounded-pill px-3"
+                                    type="button">
+                                    Comprar
+                                </button>
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg>
+                                <small style="font-weight: bold;">R$170,00</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url(assets/tenis.png); background-size: cover;">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                            Tênis preto e branco muito bonito
+                        </h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <button style="font-weight: bold;" class="btn btn-warning rounded-pill px-3"
+                                    type="button">
+                                    Comprar
+                                </button>
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg>
+                                <small style="font-weight: bold;">R$290,00</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container px-4 py-5" id="custom-cards">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url(assets/headphones_carrossel.png); background-size: cover;">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                            Fone de ouvido Gamer
+                        </h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <button style="font-weight: bold;" class="btn btn-warning rounded-pill px-3"
+                                    type="button">
+                                    Comprar
+                                </button>
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg>
+                                <small style="font-weight: bold;">R$110,00</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url(assets/oculos_carrossel.png); background-size: cover;">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                            Óculos de sol
+                        </h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <button style="font-weight: bold;" class="btn btn-warning rounded-pill px-3"
+                                    type="button">
+                                    Comprar
+                                </button>
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg>
+                                <small style="font-weight: bold;">R$110,00</small>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url(assets/smartwatch_carrossel.png); background-size: cover;">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                            Smartwatch Healthsense
+                        </h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <button style="font-weight: bold;" class="btn btn-warning rounded-pill px-3"
+                                    type="button">
+                                    Comprar
+                                </button>
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg>
+                                <small style="font-weight: bold;">R$250,00</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/carrossel_impacto_01.png" alt="Iamgem 1 do Carrossel"
+                    style="width: 100vw; height: 100vh;">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Descubra uma série de produtos com ótimos preços</h1>
+                        <p class="opacity-75">
+                            Em nossa loja, priorizamos o bem estar do cliente, apresentando ótimas ofertas e descontos
+                            incríveis!
+                        </p>
+                        <p>
+                            <a class="btn btn-lg btn-warning" style="font-weight: bold;" href="#">Converse conosco</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/carrossel_roupas_sem_modelo.png" alt="Imagem 2 do Carrossel"
+                    style="width: 100vw; height: 100vh;">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Saiba mais sobre nossos produtos</h1>
+                        <p>
+                            Temos produtos de qualidade e fazemos envio para todo o Brasil
+                        </p>
+                        <p><a class="btn btn-lg btn-warning" style="font-weight: bold;" href="#">Saiba mais</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/carrossel_impacto_03.png" alt="Imagem 3 do Carrossel"
+                    style="width: 100vw; height: 100vh;">
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>Uma jornada de sucesso, começa com um visual elegante</h1>
+                        <p>
+                            Não perca mais tempo, conheça os produtos de nossa loja
+                        </p>
+                        <p>
+                            <a class="btn btn-lg btn-warning" style="font-weight: bold;" href="#">Explorar galeria</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container">
+        <main>
+            <div class="py-5 text-center">
+                <img class="d-block mx-auto mb-4" src="assets/carrinho_preto.png" alt="" width="72" height="67" />
+                <h1 class="h2">Entre em Contato</h1>
+                <p class="lead">
+                    Tem alguma dúvida sobre nossos produtos, tamanhos ou pedidos? Envie uma mensagem pra gente!
+                </p>
+            </div>
+            <div class="row g-5">
+                <div class="col-md-7 col-lg-8">
+                    <h4 class="mb-3">Preencha o formulário</h4>
+                    <form class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label for="firstName" class="form-label">Primeiro nome</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value=""
+                                    required />
+                                <div class="invalid-feedback">
+                                    Insira um primeiro nome válido.
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="lastName" class="form-label">Sobrenome</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value=""
+                                    required />
+                                <div class="invalid-feedback">
+                                    Insira um sobrenome válido.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="pessoa@exemplo.com" />
+                                <div class="invalid-feedback">
+                                    Porfavor, insira um Email válido.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="address" class="form-label">Mensagem</label>
+                                <input style="height: 25vh;" type="text" class="form-control" id="address" required />
+                            </div>
+                        </div>
+                        <hr class="my-4" />
+                        <button style="background-color: rgb(255, 208, 0); border: none;"
+                            class="w-100 btn btn-primary btn-lg" type="submit">
+                            Enviar mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!--  FOOTER -->
+    <div class="container">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Inicio</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Produtos</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Se inscreva no nosso newsletter</h5>
+                        <p>Receba notícias e ofertas diretamente do seu Email, tudo em primeira mão</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Endereço de Email</label>
+                            <input id="newsletter1" type="email" class="form-control" placeholder="Insira seu Email" />
+                            <button
+                                style="width: 10vw; background-color: black; color: white; border: 2px solid rgb(255, 208, 0);"
+                                class="btn btn-primary" type="button">Inscreva-se</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>&copy; 2026 Catalogo. Todos os direitos reservados.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3">
+                        <a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi" width="24"
+                                height="24">
+                                <use xlink:href="#instagram"></use>
+                            </svg></a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi" width="24"
+                                height="24" aria-hidden="true">
+                                <use xlink:href="#facebook"></use>
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
